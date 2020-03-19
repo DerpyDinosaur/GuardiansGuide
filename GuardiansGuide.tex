@@ -1,0 +1,52 @@
+\documentclass{article}
+\pagestyle{empty}
+% Typeface
+\usepackage[utf8]{inputenc}
+\renewcommand\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage{tgheros}
+\renewcommand\textbullet{\ensuremath{\bullet}}
+\usepackage{ragged2e}
+% Colours
+\usepackage{xcolor}
+\definecolor{green}{HTML}{39e47e}
+% Tables
+\usepackage{tabularx}
+\usepackage{makecell}
+% Tasks
+\usepackage{tasks}
+% Images
+\usepackage{graphicx}
+\usepackage{float}
+\graphicspath{ {./images/} }
+% Referencing
+\usepackage{apacite}
+
+\begin{document}
+% Cover Page
+\begin{titlepage}
+	\begin{center}
+		\huge{\textcolor{green}{-lonetree image-}}\\
+		[7cm]
+		\Huge{\textcolor{green}{Guardians Guide To Not Securing}}\\
+		[9cm]
+		\large{By Adam Brickhill}\\
+	\end{center}
+\end{titlepage}
+
+% Contents page
+\setcounter{page}{0}
+\tableofcontents
+\newpage
+
+\addcontentsline{toc}{section}{Introduction}
+\section*{Introduction}
+\justify This is an introduction
+
+\begin{flushleft}
+	% How to cite \cite{key}
+	\bibliographystyle{apacite}
+	\bibliography{bib.bib}{}
+\end{flushleft}
+%%%%%%%%%%%%%%
+\end{document}
